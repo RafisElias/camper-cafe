@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg');
+  font-family: sans-serif;
+  padding: 1.25rem;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+.established {
+  font-style: italic;
+  margin-block: 1rem;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+.menu {
+  width: min(90%, 31.25rem);
+  background-color: burlywood;
+  margin-inline: auto;
+  padding: 1.25rem;
+  overflow: hidden;
+  border-radius: .3rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 1rem .5rem;
+}
+
+img {
+  display: block;
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 1.563rem;
+}
+
+h1,
+h2 {
+  font-family: Impact, serif;
+}
+
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+  padding-block: 0.313rem;
+  border-radius: 0.313rem;
+  cursor: pointer;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+
+.item:hover,
+.item:focus {
+  background-color: hsl(34, 57%, 60%);
+  box-shadow: 0 0 0 100vw hsl(34, 57%, 60%);
+  clip-path: inset(0 -100vw);
+}
+
+.item p {
+  font-size: 1.125rem;
+}
+
+.flavor,
+.dessert,
+.price {
+  text-align: left;
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 0.875rem;
+  padding-block-start: 1rem;
+}
+
+footer>*+* {
+  margin-top: 1rem;
+}
+
+.address {
+  margin-bottom: 0.313rem;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: brown;
+}
